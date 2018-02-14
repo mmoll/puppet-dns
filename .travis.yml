@@ -35,3 +35,4 @@ matrix:
       bundler_args: --without development
 bundler_args: --without system_tests development
 sudo: false
+before_script: sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6'
